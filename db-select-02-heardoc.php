@@ -31,7 +31,7 @@ $statement->execute();
 // ***********************************
 // 結果データを取得
 // ***********************************
-$html = "<table class=\"table table-hover\">\n";
+$html = "";
 while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 
     $html .= <<<HTML
