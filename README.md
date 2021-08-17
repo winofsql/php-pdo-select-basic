@@ -7,7 +7,7 @@
 ## db-select-02-heardoc.php
 結果の HTML をヒアドキュメントで作成し &lt;?= $html ?&gt; で埋め込みます
 ```php
-$html = "<table class=\"table table-hover\">\n";
+$html = "";
 while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 
     $html .= <<<HTML
