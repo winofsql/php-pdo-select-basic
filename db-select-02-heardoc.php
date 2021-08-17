@@ -54,7 +54,7 @@ HTML;
 <meta charset="utf-8">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
 <style>
-td,th {
+td {
     white-space: pre;
 }
 </style>
