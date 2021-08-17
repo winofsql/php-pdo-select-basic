@@ -6,5 +6,21 @@
 
 ## db-select-02-heardoc.php
 結果の HTML をヒアドキュメントで作成し &lt;?= $html ?&gt; で埋め込みます
+```php
+$html = "<table class=\"table table-hover\">\n";
+while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+
+    $html .= <<<HTML
+    <tr>
+        <td>{$row["氏名"]}</td>
+        <td>{$row["フリガナ"]}</td>
+        <td>{$row["給与"]}</td>
+        <td>{$row["手当"]}</td>
+        <td>{$row["生年月日"]}</td>
+    </tr>
+HTML;
+
+}
+```
 ![image](https://user-images.githubusercontent.com/1501327/129667707-47089ae0-9372-4b5e-b08b-ee7f1e3c8491.png)
 
